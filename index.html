@@ -735,14 +735,16 @@
         <div class="iso-cell">1스탑 오버 노출 (조리개 / 광량으로 보정)</div>
         <div class="iso-cell">1스탑 오버 노출 (조리개 / 광량으로 보정)</div>
 
-        <div class="iso-cell row-label">웨이브폼<br>18% 그레이 타겟</div>
+        <div class="iso-cell row-label">현장 웨이브폼<br>18% 그레이 타겟</div>
         <div class="iso-cell">
-          <span class="big-val" style="color:var(--green)">46~48 IRE</span>
-          <div class="sub-val">포스트 -1스탑 후 → 41 IRE</div>
+          <span class="big-val" style="color:var(--green)">41 IRE</span>
+          <div class="sub-val">EI 400 모니터링 기준 — 조명 올려서 이 수치에 맞춤</div>
+          <div class="sub-val" style="margin-top:2px">※ 포스트에서 파일 열면 → 46~48 IRE로 기록됨</div>
         </div>
         <div class="iso-cell">
-          <span class="big-val blue" style="color:var(--green)">46~48 IRE</span>
-          <div class="sub-val">포스트 -1스탑 후 → 41 IRE</div>
+          <span class="big-val blue" style="color:var(--green)">41 IRE</span>
+          <div class="sub-val">EI 1600 모니터링 기준 — 동일하게 적용</div>
+          <div class="sub-val" style="margin-top:2px">※ 포스트에서 파일 열면 → 46~48 IRE로 기록됨</div>
         </div>
 
         <div class="iso-cell row-label">팔스컬러<br>스킨톤 범위</div>
@@ -823,10 +825,11 @@
             <div class="step-desc">
               웨이브폼(퍼레이드 또는 루마 모드)에서 그레이카드의 파형 위치를 확인합니다.<br>
               조리개 또는 조명 광량으로 파형을 아래 목표 위치에 맞춥니다.<br>
-              뷰파인더 이미지가 "밝아 보이는 것"이 정상입니다 — <strong>수치로 판단합니다.</strong><br><br>
-              <span class="mono">46~48 IRE</span> &nbsp;—&nbsp; IRE / % 표시 모니터 (SmallHD 등 일반 설정)<br>
-              <span class="mono">470~495 CV</span> &nbsp;—&nbsp; Code Value 표시 모니터 (10-bit / 0~1023 풀 레인지 기준)<br>
-              <span class="mono">322~337 mV</span> &nbsp;—&nbsp; mV 표시 모니터 (0~700mV 스케일 기준, 드물게 사용)
+              EI 400 모니터링 보정이 적용된 상태이므로 <strong>화면은 정상 밝기처럼 보입니다.</strong> 수치로 판단합니다.<br><br>
+              <span class="mono">41 IRE</span> &nbsp;—&nbsp; IRE / % 표시 모니터 (SmallHD 등 일반 설정)<br>
+              <span class="mono">420 CV</span> &nbsp;—&nbsp; Code Value 표시 모니터 (10-bit / 0~1023 풀 레인지 기준)<br>
+              <span class="mono">~287 mV</span> &nbsp;—&nbsp; mV 표시 모니터 (0~700mV 스케일 기준)<br>
+              <span class="mono" style="color:var(--text-muted)">※ 포스트에서 파일을 열면 46~48 IRE로 기록되어 있음 — 이게 정상</span>
             </div>
           </div>
         </div>
@@ -861,7 +864,7 @@
           <div class="step-content">
             <div class="step-title">B-CAM (FX3) 노출 매칭</div>
             <div class="step-desc">
-              FX3도 동일하게 <span class="mono-blue">EI 400</span>으로 설정 후, 웨이브폼 기준 <span class="mono-blue">46~48 IRE</span>에 맞춥니다.<br>
+              FX3도 동일하게 <span class="mono-blue">EI 400</span>으로 설정 후, 웨이브폼 기준 <span class="mono-blue">41 IRE</span>에 맞춥니다.<br>
               두 카메라의 노출이 웨이브폼 기준으로 일치하는지 A/B 모니터를 나란히 두고 비교합니다.<br>
               렌즈 특성에 따라 T스톱 편차가 있을 수 있으니 조리개가 아닌 <strong>웨이브폼 수치를 매칭 기준</strong>으로 삼습니다.
             </div>
@@ -924,10 +927,10 @@
           </div>
         </div>
         <div class="wf-card">
-          <div class="wf-title">18% 그레이 (EI 400/1600)</div>
+          <div class="wf-title">18% 그레이 — 포스트 기록값</div>
           <div class="wf-body">
             <div class="wf-ire" style="color:var(--accent)">46~48 IRE</div>
-            <div class="wf-label">현장 촬영 타겟값<br>1스탑 오버 반영</div>
+            <div class="wf-label">EI 400/1600 촬영 후<br>파일 상 기록된 데이터 값</div>
             <div style="margin-top:8px;font-family:var(--mono);font-size:10px;color:var(--accent);border-top:1px solid var(--border);padding-top:6px;font-weight:700">
               470~495 CV &nbsp;|&nbsp; ~322~337 mV
             </div>
@@ -950,7 +953,7 @@
           <strong>팔스컬러 스킨톤 가이드 (EI 400 촬영 기준):</strong>
           스킨톤이 팔스컬러 상 <strong><span class="fc-pink">Pink</span> → <span class="fc-red">Red</span> 구간</strong>에 위치하는 것이 정상입니다.
           포스트에서 1스탑 풀다운 이후 스킨톤은 정상 <strong><span class="fc-yellow">Yellow</span>~<span class="fc-orange">Orange</span> 존</strong>으로 내려옵니다.
-          촬영 중 뷰파인더에서 "너무 밝다"는 느낌이 드는 것은 의도된 결과입니다.
+          EI 400 모니터링 보정 덕분에 현장 모니터에서는 화면이 정상 밝기처럼 보이지만, 실제 기록은 1스탑 오버 상태입니다.
         </div>
       </div>
     </div>
@@ -1071,7 +1074,7 @@
           <div class="checklist">
             <div class="check-item"><div class="check-box"></div><div class="check-text">씬 시작 전 <strong>그레이카드 샷</strong> 녹화</div></div>
             <div class="check-item"><div class="check-box"></div><div class="check-text">슬레이트에 <strong>Base ISO / EI</strong> 기재</div></div>
-            <div class="check-item"><div class="check-box"></div><div class="check-text">웨이브폼에서 18% gray → <strong>46~48 IRE</strong> 유지</div></div>
+            <div class="check-item"><div class="check-box"></div><div class="check-text">웨이브폼에서 18% gray → <strong>41 IRE</strong> 유지 (EI 모니터링 기준)</div></div>
             <div class="check-item"><div class="check-box"></div><div class="check-text">하이라이트 <strong>90 IRE 미만</strong> 유지 확인</div></div>
             <div class="check-item"><div class="check-box"></div><div class="check-text">조명 변경 시 노출 재측정 후 촬영</div></div>
             <div class="check-item"><div class="check-box"></div><div class="check-text">A/B캠 <strong>WB 동일</strong> 여부 주기적 확인</div></div>
